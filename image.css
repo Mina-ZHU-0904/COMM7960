@@ -1,0 +1,55 @@
+.image_1
+{
+   border-radius: 50%;
+   opacity:0.2; 
+}
+
+.image_2
+{
+   border-radius: 30px;
+   opacity:0.7;  
+}
+
+.image_3
+{
+   filter: grayscale(80%);  
+}
+
+.image_4
+{
+   filter:blur(5px)
+}
+
+.image_5:hover
+{
+    transform: translate(30px,30px);
+}
+
+.image_3:hover
+{
+    transform: rotate(45deg);
+}
+
+.image_4:hover
+{
+    transform: scale(2);
+}
+
+.image_2:hover
+{
+    transform: skew(45deg);
+    filter:grayscale(100%)
+}
+
+@keyframes rotation{
+    0% {transform: rotate(45deg);}
+    25% {transform: rotate(90deg);}
+    75% {transform: rotate(135deg);}
+    100% {transform: rotate(180deg);}
+}
+.image_1:hover
+{
+    animation-name: rotation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}

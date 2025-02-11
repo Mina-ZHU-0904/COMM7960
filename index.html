@@ -2,16 +2,22 @@
 <html>
     <head>
         <title>COMM7960 DEMO</title>
+        <link rel="stylesheet" href="style.css"/>
     </head>
         <body>
             <!-- To illustrate the usage of <h1> tag -->
-            <h1 align="center">
+            <h1 align="center" class="green">
+            <!--Class是可以疊加使用的 中間空一格就可以-->
                 Welcome to my first Webpage!</h1>
                 <h2>1. Heading and Paragraph</h2>
                     <h3>1.1 Heading</h3>
                     <h3>1.2 Paragraph</h3>
-                    <p>My 1st paragraph</p>
+                    <p class="green">My 1st paragraph</p>
                     <p>My 2nd paragraph</p>
+                    <p align="left">My 3nd paragraph</p>
+                    <p align="center">My 4nd paragraph</p>
+                    <p align="right">My 5nd paragraph</p>
+                <!--align用來鎖定位置的，css的定義是[align="center"]-->
                 <h2>2. List</h2>
                     <h3>2.1 Unordered list</h3>
                     <ul>
@@ -40,7 +46,7 @@
                     <h3>4.1 Create a typelink</h3>
                     <!--href的定义对象是后者-->
                     <p>Visit <a href="https://www.hkbu.edu.hk/">HKBU</a></p>
-                    <p>Visit <a href="https://www.hkbu.edu.hk/" target="_blank">HKBU in a new tab</a></p>
+                    <p>Visit <a href="https://www.hkbu.edu.hk/" target="_blank">HKBU</a> in a new tab</p>
                 <h2>5. Media</h2> 
                     <h3>5.1 Adding Image from a local drive</h3>
                     <img src="20210106_newLogo.svg" width="50%">
@@ -52,7 +58,7 @@
                 <Table border="1">
                     <caption>2022-2023 Courses</caption>
                     <tr>
-                        <th>Course code></th>
+                        <th>Course code</th>
                         <th>Course title</th>
                         <th>Link</th>
                     </tr>
